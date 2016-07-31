@@ -114,4 +114,4 @@ player addAction ["Clear vehicle inventory",QS_fnc_actionClearInventory,[],-97,F
 		systemChat "LongRange Frequencies set";
 	};
 //======================= Auto Earplugs
-//_null = [] execVM "scripts\vas\earplugs.sqf";
+_null = [] execVM "scripts\vas\earplugs.sqf";

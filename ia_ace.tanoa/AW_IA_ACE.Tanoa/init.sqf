@@ -14,7 +14,7 @@ Description:
 	Deprecated initialization file, still using until the below is correctly partitioned between server and client.
 ______________________________________________________*/
 
-//["Initialize"] call BIS_fnc_dynamicGroups;
+["Initialize"] call BIS_fnc_dynamicGroups;
 
 for [ {_i = 0}, {_i < count(paramsArray)}, {_i = _i + 1} ] do {
 	call compile format

@@ -74,7 +74,7 @@ _sniperOpt = ["optic_SOS",
               "optic_LRPS"
               ];
 //===== THERMAL OPTICS
-_opticsAllowed = ["B_Soldier_SL_F"];
+_opticsAllowed = ["B_Soldier_SL_F", "B_Soldier_TL_F"];
 _specialisedOptics = ["optic_Nightstalker",
                       "optic_tws",
                       "optic_tws_mg"
@@ -111,10 +111,8 @@ _backpackRestricted = ["O_Mortar_01_support_F",
                        "I_AA_01_weapon_F",
                        "O_AA_01_weapon_F"
                        ];
-//===== LMG
-_autoRiflemen = ["B_soldier_AR_F",
-				 "B_officer_F"
-				];
+//===== LMG/HMG
+_autoRiflemen = ["B_soldier_AR_F"];
 _autoSpecialised = ["MMG_02_black_F",
                     "MMG_02_camo_F",
                     "MMG_02_sand_F",
