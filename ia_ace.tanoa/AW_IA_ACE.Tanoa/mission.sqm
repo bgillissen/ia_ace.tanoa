@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2336.0398,70.635536,13119.965};
-		dir[]={0.047500081,-0.82020211,0.57030326};
-		up[]={0.068076432,0.57199931,0.81737846};
-		aside[]={0.99667281,-5.9868034e-007,-0.083015449};
+		pos[]={2331.2483,26.648266,13157.476};
+		dir[]={0.55818105,-0.77016366,0.30906823};
+		up[]={0.67379761,0.63774705,0.37308973};
+		aside[]={0.48446444,-1.3823737e-006,-0.87495553};
 	};
 };
 binarizationWanted=0;
@@ -21265,7 +21265,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="(group this) setGroupId [""BETA""];";
+						init="(group this) setGroupId [""BRAVO""];";
 						name="bTL";
 						description="Team Leader";
 						isPlayable=1;
@@ -22021,7 +22021,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="(group this) setGroupId [""BETA""];";
+						init="(group this) setGroupId [""BRAVO""];";
 						name="b_grenadier";
 						description="Grenadier";
 						isPlayable=1;
@@ -22210,7 +22210,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="(group this) setGroupId [""BETA""];";
+						init="(group this) setGroupId [""BRAVO""];";
 						name="b_rifleman";
 						description="Rifleman (M136)";
 						isPlayable=1;
@@ -22428,7 +22428,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="(group this) setGroupId [""BETA""];";
+						init="(group this) setGroupId [""BRAVO""];";
 						name="b_marksman";
 						description="Marksman";
 						isPlayable=1;
@@ -22596,7 +22596,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="(group this) setGroupId [""BETA""];";
+						init="(group this) setGroupId [""BRAVO""];";
 						name="b_mgassist";
 						description="Rifleman (Ass. MG)";
 						isPlayable=1;
@@ -22799,7 +22799,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="(group this) setGroupId [""BETA""];";
+						init="(group this) setGroupId [""BRAVO""];";
 						name="b_mg";
 						description="Heavy MG";
 						isPlayable=1;
