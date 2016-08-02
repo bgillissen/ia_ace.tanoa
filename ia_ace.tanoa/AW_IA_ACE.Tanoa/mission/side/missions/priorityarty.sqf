@@ -112,7 +112,7 @@ private ["_flatPos","_accepted","_position","_flatPos1","_flatPos2","_flatPos3",
 	_dir = 0;
 	for "_c" from 0 to 7 do {
 		_pos = [_flatPos, _distance, _dir] call BIS_fnc_relPos;
-		_barrier = "Land_HBarrierBig_F" createVehicle _pos;
+		_barrier = "Land_HBarrier_5_F" createVehicle _pos;
 		waitUntil {alive _barrier};
 		_barrier setDir _dir;
 		_dir = _dir + 45;

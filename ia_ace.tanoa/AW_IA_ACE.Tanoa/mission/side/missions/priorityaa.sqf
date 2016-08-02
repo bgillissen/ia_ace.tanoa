@@ -126,7 +126,7 @@ private ["_basepos","_loopVar","_dir","_PTdir","_pos","_barrier","_unitsArray","
 	for "_c" from 0 to 7 do
 	{
 		_pos = [_flatPos, _distance, _dir] call BIS_fnc_relPos;
-		_barrier = "Land_HBarrierBig_F" createVehicle _pos;
+		_barrier = "Land_HBarrier_5_F" createVehicle _pos;
 		waitUntil {alive _barrier};
 		_barrier setDir _dir;
 		_dir = _dir + 45;
@@ -153,7 +153,7 @@ private ["_basepos","_loopVar","_dir","_PTdir","_pos","_barrier","_unitsArray","
 	priorityObj2 addEventHandler ["Fired",{ priorityObj2 setVehicleAmmo 1 }];
 
 	//-------------------- 6b. ABIT OF EXTRA HEALTH
-
+/*
 	//---------- OBJ 1
 	
 		priorityObj1 setVariable ["selections", []];
@@ -203,7 +203,7 @@ private ["_basepos","_loopVar","_dir","_PTdir","_pos","_barrier","_unitsArray","
 				_damage;
 			}
 		];
-
+*/
 	//----- 6c. CAN SEE ALL PLAYERS OR NEARBY TARGETS (TARGET PILOTS?) SMALL RADAR DOME NEARBY?
 
 		/* WIP: See below loop */
