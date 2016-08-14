@@ -28,20 +28,13 @@ if (PARAMS_Fatigue == 0) then {player enableFatigue FALSE;};
 _helipilots = ["B_Helipilot_F","B_helicrew_F","O_Helipilot_F","O_helicrew_F","I_Helipilot_F","I_helicrew_F"];
 _iamhelipilot = ({typeOf player == _x} count _helipilots) > 0;
 if (_iamhelipilot) then {
-	//===== FAST ROPE
-	if (PARAMS_HeliRope != 0) then {
-		player addAction ["Toss Ropes",zlt_fnc_createropes, [], -1, false, false, '','[] call zlt_fnc_ropes_cond'];
-		player addAction ["Cut Ropes",zlt_fnc_removeropes, [], 98, false, false, '','not zlt_mutexAction and count ((vehicle player) getvariable ["zlt_ropes", []]) != 0'];
-	};
 	//===== HELI SUPPLY DROP
 	if (PARAMS_HeliDrop != 0) then {
 		player addAction ["Drop supply crate",QS_fnc_airDrop,[],0,false,true,'','[] call QS_fnc_conditionAirDrop'];
 	};
-	//===== UH-80 TURRETS
-	if (PARAMS_UH80TurretControl != 0) then {
-		inturretloop = false;
-		UH80TurretAction = player addAction ["Turret Control",QS_fnc_uh80TurretControl,[],-95,false,false,'','[] call QS_fnc_conditionUH80TurretControl'];
-	};
+	//===== Ghosthawk open/close doors
+	player addAction ["Open Side Doors",QS_fnc_GHOpenDoors,[],0,false,true,'','[] call QS_fnc_conditionGHOpenDoors'];
+	player addAction ["Close Side Doors",QS_fnc_GHCloseDoors,[],0,false,true,'','[] call QS_fnc_conditionGHCloseDoors'];
 };
 
 //============================= UAV
@@ -115,3 +108,17 @@ player addAction ["Clear vehicle inventory",QS_fnc_actionClearInventory,[],-97,F
 	};
 //======================= Auto Earplugs
 //_null = [] execVM "scripts\vas\earplugs.sqf";
+
+/*
+//--------------------- Curator Hint
+if ( isNil {player getVariable "curatorEH"} ) then {
+	findDisplay 46 displayAddEventHandler ["KeyDown", {
+		if ( inputAction "CuratorInterface" > 0 ) then {
+			systemChat "Curator interface is opened";
+		};
+		false
+	}];
+	player setVariable ["curatorEH", TRUE, TRUE];
+	systemChat "Curator EH enabled";
+};
+*/
